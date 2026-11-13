@@ -6,13 +6,17 @@ All notable changes to Markdown PR Comments for GitHub (formerly *Rich Diff Comm
 
 ### Added
 
-- **Listen to the changes.** A new play button next to the Changes `◀ N/M ▶` counter reads each change aloud with your browser's voice, highlights it, and moves on to the next one. `◀` / `▶` and clicking a Changes card skip while it reads; press the button again to stop. An edited block is read as it is now, followed by the deleted words when Show removed content is checked; a deleted block is announced as "Removed block starting with" its first two words; a new file is read in full. Speed and voice are in View options. Nothing is spoken until you press play.
+- **Listen to the changes.** A new play button next to the Changes `◀ N/M ▶` counter reads each change aloud with your browser's voice, highlights it, and moves on to the next one. The sentence being spoken is highlighted. `◀` / `▶` and clicking a Changes card skip while it reads, and `←` / `→` step to the previous or next sentence; press the button again to stop. An edited block is read as it is now, followed by the deleted words when Show removed content is checked; a deleted block is announced as "Removed block starting with" its first two words; a new file is read in full. Speed and voice are in View options. Nothing is spoken until you press play.
 
 ### Changed
 
 - **The sidebar is 32px wider** (512px instead of 480px) when expanded or floating, to fit the play button.
 
 - **The sidebar bar now sits in GitHub's file toolbar.** Instead of floating over the page, the blue bar is placed in the empty space of the row that holds "All commits" and "viewed", and stays there as you scroll, so it no longer covers the diff and you don't need to keep moving it. Expanding it opens the Changes, Threads, and Outline lists right below. Drag the bar if you still want it floating anywhere on the page; press `Shift+T` to put it back in the toolbar. If you had moved the bar before, press `Shift+T` once to dock it.
+
+### Fixed
+
+- **Navigating no longer hides the target under GitHub's sticky headers.** Moving to a change, thread, or Outline heading used to stop it a line too high, under the sticky file name bar; it now lands just below the toolbar and file header.
 
 ## [1.14.0] — 2026-11-03
 
