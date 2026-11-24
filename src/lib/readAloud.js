@@ -23,7 +23,7 @@
   const REMOVED_SELECTOR = 'del, s, .removed';
   // Our own UI inside rendered Markdown (comment buttons, threads, markers).
   const INJECTED_UI_SELECTOR =
-    '.grdc-comment-box, .grdc-thread, .grdc-sidebar, .grdc-comment-edit, .grdc-reply-box, ' +
+    '.grdc-comment-box, .grdc-thread-row, .grdc-thread, .grdc-sidebar, .grdc-comment-edit, .grdc-reply-box, ' +
     '.grdc-existing-thread, .grdc-comment-btn, .grdc-collapse-toggle, ' +
     '.grdc-table-thread-marker, .grdc-code-line-thread-marker';
   const READING_SELECTOR = 'h1, h2, h3, h4, h5, h6, p, li, tr, pre, blockquote';
